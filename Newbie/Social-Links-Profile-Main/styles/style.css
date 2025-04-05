@@ -1,0 +1,115 @@
+/* Universal Box-Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Root Color Variables */
+:root {
+  --main-page: #141414;
+  --card-component: #1f1f1f;
+  --accent-color: #c4f82a;
+  --link-background: #333333;
+  --text-color: white;
+}
+
+/* Body Styles */
+body {
+  background-color: var(--main-page);
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+}
+
+/* Main (Card) Component Section */
+.card {
+  background-color: var(--card-component);
+  height: 38.9rem;
+  width: 25rem;
+  margin: 200px auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0 30px;
+  transition: all 0.3s ease; /* Smooth transition for responsiveness */
+}
+
+/* Profile Picture Section */
+.card__header-profile-picture-pic {
+  border-radius: 50%; /* Shorter notation for 100% */
+  max-width: 90px;
+  margin: 45px auto 20px; /* Center the profile picture */
+}
+
+/* Info Section */
+.info__header {
+  font-weight: 600;
+}
+
+.info__location {
+  color: var(--accent-color);
+  margin: 7px 0; /* Simplified margin setting */
+}
+
+.info__tag-line {
+  margin: 30px 0;
+  font-size: 15px;
+}
+
+/* Links Section */
+.card__links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.items {
+  background-color: var(--link-background);
+  color: var(--text-color);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.items:hover {
+  background-color: var(--accent-color);
+  color: var(--main-page);
+  font-weight: 600;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 767px) {
+  .card {
+    width: 90%;
+    margin: 120px auto;
+    height: 550px;
+  }
+
+  .card__header-profile-picture-pic {
+    max-width: 90px;
+    margin: 20px auto;
+  }
+
+  .info__tag-line {
+    font-size: 14px;
+    margin: 20px 0;
+  }
+
+  .items {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .items:hover {
+    background-color: var(--accent-color);
+    color: var(--main-page);
+    font-weight: 600;
+  }
+}
