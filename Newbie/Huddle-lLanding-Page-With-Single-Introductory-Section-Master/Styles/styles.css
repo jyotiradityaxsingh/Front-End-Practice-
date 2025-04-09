@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+body {
+  background-color: #674bb1;
+  color: white;
+  font-family: sans-serif;
+}
+
+.background {
+  position: absolute;
+  right: 100px;
+}
+
+.header__logo {
+  position: absolute;
+  max-width: 200px;
+  height: auto;
+  top: 50px;
+  left: 50px;
+}
+
+.section__mockup {
+  width: 600px;
+  height: auto;
+  position: absolute;
+  top: 200px;
+  left: 50px;
+}
+
+.main {
+  width: 500px;
+  position: absolute;
+  top: 250px;
+  right: 75px;
+}
+
+.main__para {
+  margin-top: 25px;
+  font-weight: 100;
+}
+
+.main__btn {
+  color: #674bb1;
+  font-size: 1rem;
+  margin-top: 15px;
+  border-radius: 50px;
+  padding: 10px 50px;
+  border: none;
+  box-shadow: 1.5px 1.5px 5px 0px rgba(0, 0, 0, 0.459);
+}
+
+.main__btn:hover {
+  position: absolute;
+  background-color: #e980e7;
+  color: white;
+  cursor: pointer;
+}
