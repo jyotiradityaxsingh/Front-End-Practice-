@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+:root {
+  --primary-color: #f67714;
+  --background-color: #141519;
+  --light-grey: #222933;
+  --dark-blue: #19202a;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Overpass", sans-serif;
+  color: white;
+}
+
+/* Card Component */
+.card {
+  background: radial-gradient(at top, #212833 15%, #1c232d, #181f27);
+  margin: 200px auto;
+  max-width: 400px;
+  min-height: 350px;
+  border-radius: 20px;
+  display: block;
+  padding: 20px 25px;
+}
+
+/* Star Icon */
+.card .icon img {
+  background-color: #262c36;
+  border-radius: 50%;
+  padding: 15px;
+  max-width: 450px;
+  height: 45px;
+  margin: 10px 0 15px;
+}
+
+/* Text Content */
+.card .main-content p {
+  margin: 5px 0;
+  color: #777e88;
+}
+
+/* Rating Buttons */
+.card .container-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.card .container-btn button {
+  width: 50px;
+  height: 50px;
+  background-color: var(--dark-blue);
+  font-size: 15px;
+  background-color: #252e37;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  transition: 0.5s;
+}
+
+.card .container-btn button:hover {
+  background-color: var(--primary-color);
+  color: var(--dark-blue);
+}
+
+/* Submit Button */
+.card .submit {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 100px;
+  background-color: var(--primary-color);
+  color: var(--dark-blue);
+  font-size: 15px;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+
+.card .submit:hover {
+  background-color: white;
+  color: var(--dark-blue);
+}
+
+/* Button Defaults */
+button {
+  outline: none;
+  border: none;
+  display: block;
+  cursor: pointer;
+  font-weight: 700;
+}
